@@ -8,7 +8,7 @@ int main()
 {
     Simulator simulator(3);
 
-    std::ifstream file("input/input_task2.txt");
+    std::ifstream file("input/input_stress.txt");
 
     if (!file.is_open())
     {
