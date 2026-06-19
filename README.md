@@ -2,25 +2,52 @@
 
 Project X 2026 – Task 2
 
-## Overview
-
-CPUSim is a C++ simulator that combines CPU scheduling with a multi-level memory hierarchy. The project models how tasks compete for CPU execution time and how memory blocks move through L1, L2, L3 caches and RAM.
-
-The simulator implements Round Robin scheduling, cache hit/miss detection, FIFO cache replacement, memory promotion between cache levels, latency tracking, and execution statistics collection.
-
----
+CPU Scheduler and Multi-Level Cache Simulator implemented in C++.
 
 ## Features
 
-- Round Robin CPU Scheduling
-- Multi-Level Cache Hierarchy (L1, L2, L3, RAM)
-- FIFO Cache Replacement Policy
+- Round Robin Scheduling
+- L1, L2, L3 Cache Hierarchy
+- FIFO Cache Replacement
 - Cache Hit/Miss Detection
-- Memory Block Promotion
-- Latency Tracking
-- Cycle-by-Cycle Execution Output
-- Functional, Edge Case, and Stress Testing
-
----
+- Memory Latency Tracking
+- Execution Statistics
 
 ## Project Structure
+
+```text
+src/      -> Source Code
+input/    -> Input Files
+docs/     -> Documentation
+```
+
+## Build
+
+```bash
+g++ src/*.cpp -o cpusim
+```
+
+## Run
+
+### Windows
+
+```bash
+.\cpusim.exe
+```
+
+### Linux / macOS
+
+```bash
+./cpusim
+```
+
+## Input Files
+
+- `input/input_task2.txt` – Normal test case
+- `input/input_stress.txt` – Stress test for FIFO eviction
+
+## Repository
+
+Created for Project X 2026.
+
+Author: Darshan Mahale
